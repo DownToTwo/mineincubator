@@ -147,7 +147,7 @@ __`#[non_exhaustive]` attribute__, interestedly, __serves the very same purpose 
 
 Despite being opposite qualities, both exhaustivity and non-exhaustivity are intended for [future-proofing][12] a codebase, thus cannot be applied blindly everywhere, but rather wisely, where it may really has sense. That's why it's __very important__ to understand their __use-cases and implicability__ very well.
 
-For better understanding `#[non_exhaustive]` attribute purpose, design, limitations and use cases, read through the following articles:
+To better understand `#[non_exhaustive]` attribute's purpose, design, limitations and use cases, read through:
 - [Rust Reference: 7.6. The `non_exhaustive` attribute][9]
 - [Rust RFC 2008: `non_exhaustive`][10]
 - [Turreta: Using `#[non_exhaustive]` for Non-exhaustive Rust Structs][11]
@@ -184,5 +184,5 @@ After completing everything above, you should be able to answer (and understand 
 [8]: https://blog.datalust.co/rust-at-datalust-how-we-organize-a-complex-rust-codebase#maintaininginvariantsthatcoverallstructfields
 [9]: https://doc.rust-lang.org/reference/attributes/type_system.html#the-non_exhaustive-attribute
 [10]: https://rust-lang.github.io/rfcs/2008-non-exhaustive.html
-[11]: https://turreta.com/blog/2019/12/21/using-non_exhaustive-for-non-exhaustive-rust-structs
+[11]: https://web.archive.org/web/20250120122453/https://turreta.com/blog/2019/12/21/using-non_exhaustive-for-non-exhaustive-rust-structs
 [12]: https://en.wikipedia.org/wiki/Future-proof

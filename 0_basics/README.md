@@ -3,30 +3,30 @@ Step 0: Become familiar with Rust basics
 
 __Estimated time__: 3 days
 
-Read through [Rust Book], [Rust FAQ], and become familiar with basic [Rust] concepts, syntax, memory model, type and module systems.
+Read through [the Rust Book][Rust Book], [Rust FAQ], and become familiar with basic [Rust] concepts, syntax, the memory model, and the type and module systems.
 
-Polish your familiarity by completing [Rust By Example] and [rustlings].
+Polish your familiarity by completing [Rust By Example] and [Rustlings][rustlings].
 
-Read through [Cargo Book] and become familiar with [Cargo] and its workspaces.
+Read through [the Cargo Book][Cargo Book] and become familiar with [Cargo] and its workspaces.
 
 After completing these steps, you should be able to answer (and understand why) the following questions:
-- What memory model [Rust] has? Is it single-threaded or multiple-threaded? Is it synchronous or asynchronous?
-- What runtime [Rust] has? Does it use a GC (garbage collector)?
-- What statically typing means? What is a benefit of using it?
+- What memory model does [Rust] have? Is it single-threaded or multiple-threaded? Is it synchronous or asynchronous?
+- What runtime does [Rust] have? Does it use a GC (garbage collector)?
+- What does static typing mean? What is a benefit of using it?
 - What are generics and parametric polymorphism? Which problems do they solve?
-- What are traits? How are they used? How do they compare to interfaces? What are an auto trait and a blanket impl? What is a marker trait?
-- What are static and dynamic dispatches? Which should I use, and when?
-- What is a crate and what is a module in Rust? How do they differ? How are the used?
+- What are traits? How are they used? How do they compare to interfaces? What are auto traits and blanket impls? What is a marker trait?
+- What are static and dynamic dispatch? Which should you use, and when?
+- What is a crate and what is a module in [Rust]? How do they differ? How are they used?
 - What are move semantics? What are borrowing rules? What is the benefit of using them?
 - What is immutability? What is the benefit of using it?
 - What is cloning? What is copying? How do they compare?
 - What is RAII? How is it implemented in [Rust]? What is the benefit of using it?
 - What is an iterator? What is a collection? How do they differ? How are they used?
-- What are macros? Which problems do they solve? What is the difference between declarative and procedural macro?
-- How code is tested in [Rust]? Where should you put tests and why?
-- Why [Rust] has `&str` and `String` types? How do they differ? When should you use them?
+- What are macros? Which problems do they solve? What is the difference between declarative and procedural macros?
+- How is code tested in [Rust]? Where should you put tests and why?
+- Why does [Rust] have `&str` and `String` types? How do they differ? When should you use them?
 - What are lifetimes? Which problems do they solve? Which benefits do they give?
-- Is [Rust] OOP language? Is it possible to use SOLID/GRASP? Does it have an inheritance?
+- Is [Rust] an OOP language? Is it possible to use SOLID/GRASP? Does it have inheritance?
 
 _Additional_ articles, which may help to understand the above topic better:
 - [Chris Morgan: Rust ownership, the hard way][1]
@@ -41,6 +41,7 @@ _Additional_ articles, which may help to understand the above topic better:
 - [Bradford Hovinen: Demystifying trait generics in Rust][14]
 - [Brandon Smith: Three Kinds of Polymorphism in Rust][6]
 - [Jeremy Steward: C++ & Rust: Generics and Specialization][7]
+- [Lukasz Uszko: Safe and Secure Coding in Rust: A Comparative Analysis of Rust and C/C++][18]
 - [cooscoos: &stress about &Strings][8]
 - [Jimmy Hartzell: RAII: Compile-Time Memory Management in C++ and Rust][9]
 - [Georgios Antonopoulos: Rust vs Common C++ Bugs][10]
@@ -75,3 +76,4 @@ _Additional_ articles, which may help to understand the above topic better:
 [15]: https://dev.to/vikram2784/beyond-pointers-how-rust-outshines-c-with-its-borrow-checker-1mad
 [16]: https://sabrinajewson.org/blog/null-lifetime
 [17]: https://claytonwramsey.github.io/2023/08/14/dumpster.html
+[18]: https://luk6xff.github.io/other/safe_secure_rust_book/intro/index.html

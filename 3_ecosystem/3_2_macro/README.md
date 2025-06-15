@@ -37,7 +37,7 @@ The good part about declarative macros is that they are [hygienic][11] (and so, 
 
 Code generation purpose is not the only one declarative macros are used for. Quite often they are used for building abstractions and APIs too, because they all to implement much more ergonomic features than regular functions do: named arguments, [variadics][17], etc.
 
-For better understanding declarative macros design, concepts, usage and features, read through the following articles:
+To better understand declarative macros' design, concepts, usage and features, read through:
 - [Rust Book: 19.6. Macros: Declarative Macros with `macro_rules!` for General Metaprogramming][13]
 - [Rust By Example: 16. macro_rules!][14]
 - [The Little Book of Rust Macros][15]
@@ -96,18 +96,19 @@ There are three kinds of procedural macros in [Rust] at the moment:
 - [`quote`] crate provides quasi-quoting, which allows to turn [Rust] syntax tree data structures into tokens of source code in an ergonomic and readable way.
 - [`proc-macro2`] crate provides unified [`proc_macro`] API across all [Rust] compiler versions and makes procedural macros unit-testable.
 
-Nowadays, these are backbone for writing a procedural macro implementation. Even though, developers mostly tend ot omit using [`syn`] for trivial cases (not requiring much [AST] parsing), as it [hits compilation times quite notably][30], or prefer to use simpler and less powerful [AST] parsing crates (like [`venial`]).
+Nowadays, these are backbone for writing a procedural macro implementation. Even though, developers mostly tend ot omit using [`syn`] for trivial cases (not requiring much [AST] parsing), as it [hits compilation times quite notably][30], or prefer to use simpler and less powerful [AST] parsing crates (like [`venial`] or [`unsynn`]).
 
 On top of them, more ecosystem crates may be used for having less boilerplate, better ergonomics and "batteries included". Most notable among them are:
 - [`darling`] crate, making declarative attribute parsing more straight-forward and ergonomic.
 - [`synstructure`] crate, providing helper types for matching against enum variants, and extracting bindings to each of the fields in the deriving struct or enum in a generic way.
 - [`synthez`] crate, providing [derive macros][29] for parsing [AST] (yeah, derive macros for derive macros!) and other helpful "batteries" for daily routine of procedural macro writing.
 
-For better understanding procedural macros design, concepts, usage and features, read through the following articles:
+To better understand procedural macros' design, concepts, usage and features, read through:
 - [Rust Book: 19.6. Macros: Procedural Macros for Generating Code from Attributes][23]
 - [Rust Reference: 3.2. Procedural Macros][26]
 - [Official `syn` crate docs][`syn`]
 - [Official `venial` crate docs][`venial`]
+- [Official `unsynn` crate docs][`unsynn`]
 - [Official `quote` crate docs][`quote`]
 - [Official `proc-macro2` crate docs][`proc-macro2`]
 - [Nazmul Idris: Guide to Rust procedural macros][32]
@@ -146,6 +147,7 @@ After completing everything above, you should be able to answer (and understand 
 [`syn`]: https://docs.rs/syn
 [`synstructure`]: https://docs.rs/synstructure
 [`synthez`]: https://docs.rs/synthez
+[`unsynn`]: https://docs.rs/unsynn
 [`venial`]: https://docs.rs/venial
 [AST]: https://en.wikipedia.org/wiki/Abstract_syntax_tree
 [DSL]: https://en.wikipedia.org/wiki/Domain-specific_language

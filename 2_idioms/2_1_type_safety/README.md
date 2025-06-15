@@ -77,12 +77,13 @@ This is what is called ["newtype pattern"][1]. [Newtypes][1] are a zero-cost abs
 
 The downside of using [newtype pattern][1] is a necessity of writing _more boilerplate code_, because you should provide common traits implementations by yourself (like `Clone`, `Copy`, `From`/`Into`/`AsRef`/`AsMut`), as without them the type won't be ergonomic in use. However, most of them can be _derived automatically_ with `std` capabilities or third-party derive-crates (like [`derive_more`]), so the cost is acceptable in most cases. Furthermore, the excellent [`nutype`] crate pushes this idea even further, aiming to provide the best ergonomics for [newtype pattern][1] without compromising any guarantees it gives.
 
-For better understanding [newtype pattern][1], read through the following articles:
+To better understand [newtype pattern][1], read through:
 - [Rust Design Patterns: Newtype][1]
 - [Rust By Example: 14.7. New Type Idiom][2]
 - [Alexis King: Parse, don’t validate][7] ([ru][7_ru])
 - [Stefan Baumgartner: Refactoring in Rust: Abstraction with the Newtype Pattern][10]
 - [Official `nutype` crate docs][`nutype`]
+- [Angus Morrison: The ultimate guide to Rust newtypes][11]
 
 
 
@@ -95,7 +96,7 @@ Not always, but _yes_ in some cases. One possible way is to use [typestates][3] 
 
 A real-world example of applying this idiom in [Rust] would be the awesome [`state_machine_future`] crate.
 
-For better understanding [typestates][3], read through the following articles:
+To better understand [typestates][3], read through:
 - [David Teller: Typestates in Rust][3]
 - [Cliff L. Biffle: The Typestate Pattern in Rust][5]
 - [Ana Hobden: Pretty State Machine Patterns in Rust][4]
@@ -152,3 +153,4 @@ After completing everything above, you should be able to answer (and understand 
 [8]: https://www.greyblake.com/blog/builder-with-typestate-in-rust
 [9]: https://peace.mk/blog/compile-time-correctness-type-state
 [10]: https://fettblog.eu/refactoring-rust-abstraction-newtype
+[11]: https://www.howtocodeit.com/articles/ultimate-guide-rust-newtypes#write-ergonomic-newtype-constructors-with-from-and-tryfrom

@@ -11,7 +11,7 @@ __[Dynamic dispatch][2]__ (sometimes called "late binding") __happens at runtime
 
 You _have to_ use [dynamic dispatch][2] in situations where [type erasure][4] is required. If the problem can be solved with a [static dispatch][1] then you'd better to do so to avoid performance penalties. The most common example when you cannot use [static dispatch][1] and have to go with [dynamic dispatch][2] are _heterogeneous_ collections (where each item is potentially a different concrete type, but each one implements `MyTrait`).
 
-For better understanding [static][1] and [dynamic][2] dispatches purpose, design, limitations and use cases, read through the following articles:
+To better understand [static][1] and [dynamic][2] dispatches' purpose, design, limitations and use cases, read through:
 - [Rust Blog: Abstraction without overhead: traits in Rust][11]
 - [Joshleeb: Traits and Trait Objects in Rust][12]
 - [Rust Book: 17.2. Using Trait Objects That Allow for Values of Different Types][3]
@@ -37,7 +37,7 @@ The other reason to go with [static dispatch][1] is that except performance pena
 
 This can lead to quite tricky and non-obvious situations when writing code.
 
-For better understanding [object safety][5] purpose, design and limitations, read through the following articles:
+To better understand [object safety][5] purpose, design and limitations, read through:
 - [Rust Book: 17.2. Object Safety Is Required for Trait Objects][5]
 - [Rust Reference: 6.1. Traits: Object Safety][6]
 - [Nicholas Matsakis: Dyn async traits, part 2][17]
@@ -147,6 +147,14 @@ There is a handy [momo] crate, which generates this boilerplate automatically in
 
 
 
+## More reading
+
+- [Guillem L. Jara: Designing an efficient memory layout in Rust with unsafe & unions, or, an overlong guide in avoiding dynamic dispatch][21]
+- [Armin Ronacher: Using Rust Macros for Custom VTables][22]
+
+
+
+
 ## Task
 
 Given the following `Storage` abstraction and `User` entity:
@@ -201,3 +209,5 @@ After completing everything above, you should be able to answer (and understand 
 [18]: https://lucumr.pocoo.org/2022/1/6/rust-extension-map
 [19]: https://lucumr.pocoo.org/2022/1/7/as-any-hack
 [20]: https://medium.com/digitalfrontiers/rust-dynamic-dispatching-deep-dive-236a5896e49b
+[21]: https://alonely0.github.io/blog/unions
+[22]: https://lucumr.pocoo.org/2024/5/16/macro-vtable-magic
